@@ -1,0 +1,31 @@
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer__logo {
+  padding-top: 66px;
+  padding-bottom: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    padding-top: 62px;
+    padding-bottom: 20px;
+  }
+}
+
+.footer__text {
+  padding-bottom: 29px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__text {
+    font-size: 12px;
+    padding-bottom: 62px;
+  }
+}

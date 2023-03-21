@@ -1,14 +1,31 @@
-// import React from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styles from"../styles/header.module.css"
 
-// const Header = () => {
-//   return (
-//     <>
-//       <div className="header-container">
-//         <h1>Je suis le Header</h1>
-//       </div>
-//       <p>test</p>
-//     </>
-//   );
-// };
+const Header = () => {
+  return (
+    <>
+      <header className={styles.header}>
+        <div className={styles.header__logo}>
+          <img src="LOGO.png" alt="Logo Kasa" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <NavLink to="/" activeClassName="navLink--active">
+                Accueil
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" activeClassName="navLink--active">
+                A propos
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
+  );
+};
 
-// export default Header;
+export default Header;
