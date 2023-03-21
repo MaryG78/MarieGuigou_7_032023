@@ -3,6 +3,7 @@ import About from "../pages/about";
 import Accomodation from "../pages/accomodation";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../pages/layout";
+import Home from "../pages/home"
 
 // création d'un composant de routage
 function Router() {
@@ -10,7 +11,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          {/* <Route index element={<Home />} /> */}
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/accomodation" element={<Accomodation />} />
           <Route path="*" element={<Error />} />
