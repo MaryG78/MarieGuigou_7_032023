@@ -1,0 +1,35 @@
+.banner {
+position: relative;
+padding: 40px 100px 40px 100px;
+text-align: center;
+}
+
+.banner img {
+border-radius: 25px;
+filter: brightness(80%);
+width: 100%;
+min-height: 111px;
+min-width: 335px;
+}
+
+.banner__text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 48px;
+font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+.banner__text {
+font-size: 38px;
+}
+}
+
+@media screen and (max-width: 900px) {
+.banner__text {
+font-size: 24px;
+}
+}

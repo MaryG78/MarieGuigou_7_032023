@@ -1,10 +1,12 @@
 import React from 'react';
+import Accomodations from "../components/Accomodations"
+
 
 const Accomodation = () => {
     return (
-        <div>
-            Accomodation page works
-        </div>
+        <>
+            <Accomodations />
+        </>
     );
 };
 

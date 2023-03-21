@@ -1,0 +1,23 @@
+.accomodations {
+min-height: 829px;
+display: flex;
+flex-wrap: wrap;
+background-color: #F6F6F6;
+border-radius: 25px;
+gap: 50px;
+margin: 43px 100px 0px 100px;
+justify-content: space-between;
+padding: 56px 50px 56px 50px;
+}
+
+@media screen and (max-width: 1200px) {
+.accomodations {
+gap: 20px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.accomodations {
+justify-content: center;
+}
+}

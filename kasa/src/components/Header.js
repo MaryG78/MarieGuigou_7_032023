@@ -1,27 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import styles from"../styles/header.module.css"
 
 const Header = () => {
   return (
     <>
-        <header className="header-container">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/home">Accueil</Link>
-              </li>
-              <li>
-                <Link to="/accomodation">Logements</Link>
-              </li>
-              <li>
-                <Link to="/about">A propos</Link>
-              </li>
-              <li>
-                <Link to="/error">Erreur 404</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+      <header className={styles.header}>
+        <div className={styles.header__logo}>
+          <img src="LOGO.png" alt="Logo Kasa" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <NavLink to="/">
+                Accueil
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">
+                A propos
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </>
   );
 };
