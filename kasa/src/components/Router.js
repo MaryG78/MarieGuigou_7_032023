@@ -1,14 +1,14 @@
-import Error from "../pages/error";
-import About from "../pages/about";
-import Accomodation from "../pages/accomodation";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "../pages/layout";
-import Home from "../pages/home"
+import { Routes, Route } from "react-router-dom";
+import Error from "../pages/Error";
+import About from "../pages/About";
+import Accomodation from "../pages/Accomodation";
+import Layout from "../pages/Layout";
+import Home from "../pages/Home"
+
 
 // création d'un composant de routage
 function Router() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
@@ -17,7 +17,6 @@ function Router() {
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
-    </BrowserRouter>
   );
 }
 

@@ -3,7 +3,7 @@ import axios from "axios";
 import styles from "../styles/accommodations.module.css";
 import AccomodationCards from "./AccomodationCards";
 
-const AccomodationContainer = () => {
+const AccomodationGallery = () => {
   const [data, setData] = useState([]);
 
   const getAccomodationDatas = () => {
@@ -30,4 +30,4 @@ const AccomodationContainer = () => {
   );
 };
 
-export default AccomodationContainer;
+export default AccomodationGallery;
