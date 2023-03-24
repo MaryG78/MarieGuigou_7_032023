@@ -4,12 +4,12 @@ import styles from "../styles/accomodationCards.module.css";
 
 
 const AccomodationCards = (props) => {
-    return (
-        <div className={styles.card}>
-          <img src={props.imageUrl} />
-          <h2>{props.title}</h2>
-        </div>
-    );
+  return (
+    <figure className={styles.card}>
+      <img src={props.imageUrl} />
+      <figcaption>{props.title}</figcaption>
+    </figure>
+  );
 };
 
 export default AccomodationCards;
