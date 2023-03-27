@@ -1,10 +1,13 @@
 import Router from "./components/Router";
+import { BrowserRouter } from "react-router-dom";
 import "./styles/index.scss"
 
 function App() {
   return (
     <div className="App">
-      <Router />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </div>
   );
 }

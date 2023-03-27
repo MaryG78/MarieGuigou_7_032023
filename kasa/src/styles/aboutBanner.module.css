@@ -1,19 +1,19 @@
-.banner {
+.aboutBanner {
   position: relative;
-  margin-top: 60px;
+  margin-top: 44px;
 }
 
-.banner img {
+.aboutBanner img {
   border-radius: 25px;
   filter: brightness(80%);
   width: 100%;
-  min-height: 111px;
+  min-height: 223px;
   object-fit: cover;
 }
 
-.banner__text {
+.aboutBanner__text {
   position: absolute;
-  top: 36%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -23,28 +23,28 @@
 }
 
 @media screen and (max-width: 960px) {
-  .banner__text {
+  .aboutBanner__text {
     font-size: 38px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .banner__text {
+  .aboutBanner__text {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .banner {
+  .aboutBanner {
     margin-top: 17px;
   }
 
-  .banner__text {
+  .aboutBanner__text {
     text-align: start;
     left: 38%;
   }
 
-  .banner img {
+  .aboutBanner img {
     border-radius: 10px;
   }
 }
