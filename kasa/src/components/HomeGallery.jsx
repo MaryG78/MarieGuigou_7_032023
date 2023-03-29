@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import styles from "../styles/accommodations.module.css";
-import AccomodationCards from "./AccomodationCards";
+import styles from "../styles/homeGallery.module.css";
+import HomeCards from "./HomeCards";
 
-const AccomodationGallery = () => {
+const HomeGallery = () => {
   const [data, setData] = useState([]);
 
   const getAccomodationDatas = () => {
@@ -18,16 +18,17 @@ const AccomodationGallery = () => {
   }, []);
 
   return (
-    <div className={styles.accomodations}>
+    <div className={styles.homegallery}>
       {data.map((accomodation) => (
-        <AccomodationCards
+        <HomeCards
           key={accomodation.id}
           title={accomodation.title}
           imageUrl={accomodation.cover}
+          accomodationId={accomodation.id}
         />
       ))}
     </div>
   );
 };
 
-export default AccomodationGallery;
+export default HomeGallery;

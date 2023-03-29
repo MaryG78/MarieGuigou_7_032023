@@ -1,0 +1,69 @@
+.title h1 {
+font-size: 36px;
+font-weight: 500;
+color: #ff6060;
+padding-top: 30px;
+}
+
+.title h2 {
+font-size: 18px;
+font-weight: 500;
+color: #ff6060;
+}
+
+.title h3 {
+font-size: 18px;
+font-weight: 500;
+color: #ff6060; 
+margin: 0;
+margin-right: 10px;
+width: 60%;
+text-align: right;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between; 
+     
+}
+
+.title__owner__badge img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.title__owner__details {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.title__owner__stars {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 24px;
+}
+
+.title__owner__stars span {
+    
+    margin-left: 10px;
+}
+
+.title__header ul {
+    display: flex;
+   gap: 10px;
+   margin-top: 20px;
+}
+
+.title__header li {
+font-size: 14px;
+font-weight: 500;
+color: white;
+background-color: #ff6060;
+display: flex;
+align-items: center;
+border-radius: 10px;
+padding: 3px 40px;
+}

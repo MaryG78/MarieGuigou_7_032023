@@ -1,32 +1,32 @@
 import React from 'react';
 import AboutBanner from '../components/AboutBanner';
-import Sections from '../components/Section';
+import AboutDescriptions from '../components/AboutDescriptions';
 
 
 const About = () => {
     return (
       <main>
         <AboutBanner />
-        <div className='sections-container'>
-          <Sections
+        <div className="sections-container">
+          <AboutDescriptions
             title="Fiabilité"
             content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
         comportement discriminatoire ou de perturbation du voisinage entraînera
         une exclusion de notre plateforme."
           />
-          <Sections
+          <AboutDescriptions
             title="Respect"
             content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
         comportement discriminatoire ou de perturbation du voisinage entraînera
         une exclusion de notre plateforme."
           />
-          <Sections
+          <AboutDescriptions
             title="Service"
             content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
         comportement discriminatoire ou de perturbation du voisinage entraînera
         une exclusion de notre plateforme."
           />
-          <Sections
+          <AboutDescriptions
             title="Responsabilité"
             content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
         comportement discriminatoire ou de perturbation du voisinage entraînera
