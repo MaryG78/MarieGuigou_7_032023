@@ -18,17 +18,25 @@ const AccomodationTitle = ({accomodation}) => {
         <div className={styles.title__owner__details}>
           <h3>{accomodation.host.name}</h3>
           <div className={styles.title__owner__badge}>
-            <img src={accomodation.host.picture}/>
+            <img src={accomodation.host.picture} />
           </div>
         </div>
         <ul className={styles.title__owner__stars}>
           <li>
-            <img src="grey-star" alt="Etoile grise" />
+            <img src="grey-star.png" alt="Etoile grise" />
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <img src="grey-star.png" alt="Etoile grise" />
+          </li>
+          <li>
+            <img src="grey-star.png" alt="Etoile grise" />
+          </li>
+          <li>
+            <img src="grey-star.png" alt="Etoile grise" />
+          </li>
+          <li>
+            <img src="grey-star.png" alt="Etoile grise" />
+          </li>
         </ul>
       </div>
     </section>

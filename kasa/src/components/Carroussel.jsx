@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "../styles/accomodationCarroussel.module.css";
+import styles from "../styles/carroussel.module.css";
 
-const AccomodationCarroussel = (props) => {
+const Carroussel = (props) => {
     return (
       <section className={styles.accomodation}>
         <div className={styles.accomodation__carroussel}>
@@ -11,4 +11,4 @@ const AccomodationCarroussel = (props) => {
     );
 };
 
-export default AccomodationCarroussel;
+export default Carroussel;

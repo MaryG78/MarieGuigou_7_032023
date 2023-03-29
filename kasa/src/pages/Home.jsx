@@ -4,10 +4,10 @@ import HomeGallery from "../components/HomeGallery";
 
 const Home = () => {
   return (
-    <main>
+    <div>
       <Banner />
       <HomeGallery />
-    </main>
+    </div>
   );
 };
 

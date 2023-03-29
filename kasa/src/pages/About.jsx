@@ -1,12 +1,12 @@
 import React from 'react';
-import AboutBanner from '../components/AboutBanner';
+import Banner from '../components/Banner';
 import AboutDescriptions from '../components/AboutDescriptions';
 
 
 const About = () => {
     return (
-      <main>
-        <AboutBanner />
+      <>
+        <Banner/>
         <div className="sections-container">
           <AboutDescriptions
             title="Fiabilité"
@@ -33,7 +33,7 @@ const About = () => {
         une exclusion de notre plateforme."
           />
         </div>
-      </main>
+      </>
     );
 };
 

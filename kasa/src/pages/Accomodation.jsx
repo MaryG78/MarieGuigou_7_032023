@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import AccomodationCarroussel from "../components/AccomodationCarroussel";
+import Carroussel from "../components/Carroussel";
 import AccomodationTitle from "../components/AccomodationTitle";
 import AccomodationDescriptions from "../components/AccomodationDescriptions";
 import { useLocation } from "react-router-dom";
@@ -30,8 +30,8 @@ const Accomodation = () => {
 
   if (selectedAccomodation == null) return <div>...Loading</div>;
   return (
-    <main>
-      <AccomodationCarroussel imageUrl={selectedAccomodation.cover} />
+    <>
+      <Carroussel imageUrl={selectedAccomodation.cover} />
       <AccomodationTitle accomodation={selectedAccomodation} />
       <div className={styles.accomodationDescription__container}>
         <AccomodationDescriptions
@@ -45,7 +45,7 @@ const Accomodation = () => {
           ))}
         />
       </div>
-    </main>
+    </>
   );
 };
 

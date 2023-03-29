@@ -1,7 +1,7 @@
 .homecard {
   position: relative;
   border-radius: 10px;
-  flex-basis: 29%;
+  flex-basis: 30%;
   display: flex;
   align-items: flex-end;
   background-size: cover;  
