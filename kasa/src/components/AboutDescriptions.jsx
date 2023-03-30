@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import styles from "../styles/section.module.css";
+import styles from "../styles/aboutDescription.module.css";
 
-const Sections = (props) => {
+const AboutDescription = (props) => {
 const [isTextVisible,setIsTextVisible] = useState(false);
 const textVisible = () => {
   setIsTextVisible(!isTextVisible);
@@ -20,4 +20,4 @@ const textVisible = () => {
   );
 };
 
-export default Sections;
+export default AboutDescription;

@@ -1,13 +1,13 @@
 import React from "react";
 import Banner from "../components/Banner";
-import AccomodationsGallery from "../components/AccomodationsGallery";
+import HomeGallery from "../components/HomeGallery";
 
 const Home = () => {
   return (
-    <main>
+    <div>
       <Banner />
-      <AccomodationsGallery />
-    </main>
+      <HomeGallery />
+    </div>
   );
 };
 

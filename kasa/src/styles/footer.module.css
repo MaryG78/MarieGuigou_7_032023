@@ -2,7 +2,6 @@
   background-color: black;
   color: white;
   text-align: center;
-  margin-top: 60px;
 }
 
 .footer__logo {
@@ -24,11 +23,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .footer {
-    margin-top: 20px;
-  }
-
-  .footer__text {
+.footer__text {
     font-size: 12px;
     padding-bottom: 62px;
   }
