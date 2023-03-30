@@ -2,6 +2,16 @@ import React from "react";
 import styles from "../styles/accomodationTitle.module.css";
 
 const AccomodationTitle = ({accomodation}) => {
+
+  const rating = accomodation.rating;
+  const stars = [];
+  for (let i = 1; i <= 5; i++) {
+    if (i <= rating) {
+      stars.push(<img src="red-star.png" alt="Etoile rouge" />);
+    } else {
+      stars.push(<img src="grey-star.png" alt="Etoile grise" />);
+    }
+  }
   
   return (
     <section className={styles.title}>
@@ -22,21 +32,9 @@ const AccomodationTitle = ({accomodation}) => {
           </div>
         </div>
         <ul className={styles.title__owner__stars}>
-          <li>
-            <img src="grey-star.png" alt="Etoile grise" />
-          </li>
-          <li>
-            <img src="grey-star.png" alt="Etoile grise" />
-          </li>
-          <li>
-            <img src="grey-star.png" alt="Etoile grise" />
-          </li>
-          <li>
-            <img src="grey-star.png" alt="Etoile grise" />
-          </li>
-          <li>
-            <img src="grey-star.png" alt="Etoile grise" />
-          </li>
+          {stars.map((star) => (
+            <li>{star}</li>
+          ))}
         </ul>
       </div>
     </section>

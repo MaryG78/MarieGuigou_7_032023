@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../styles/homeCards.module.css";
+import styles from "../styles/cards.module.css";
 import { Link } from "react-router-dom";
 
-const HomeCards = (props) => {
+const Cards = (props) => {
   return (
-    <figure className={styles.homecard}>
+    <figure className={styles.card}>
       <img src={props.imageUrl} />
       <Link
         to="/accomodation"
@@ -18,4 +18,4 @@ const HomeCards = (props) => {
   );
 };
 
-export default HomeCards;
+export default Cards;

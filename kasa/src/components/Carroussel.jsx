@@ -3,11 +3,9 @@ import styles from "../styles/carroussel.module.css";
 
 const Carroussel = (props) => {
     return (
-      <section className={styles.accomodation}>
-        <div className={styles.accomodation__carroussel}>
+        <section className={styles.accomodation__carroussel}>
           <img src={props.imageUrl} alt="" />
-        </div>
-      </section>
+        </section>
     );
 };
 

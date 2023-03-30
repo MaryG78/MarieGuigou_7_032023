@@ -50,6 +50,10 @@ text-align: right;
     margin-left: 6px;;
 }
 
+.title__owner__stars img {
+    color: red;
+}
+
 .title__owner__stars span {
     
     margin-left: 10px;
