@@ -1,25 +1,25 @@
-.collapse__container {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.collapse__about {
+    margin: 0 108px;
 }
 
-.collapse {
-  overflow: hidden;
-  width: 48%;
+.collapse__about__card {
+
 }
 
 .collapse__header {
   background-color: #ff6060;
   color: white;
   padding: 13px 20px 13px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 31px;
+}
+
+.collapse__header img {
+  cursor: pointer;
 }
 
 .arrow {
@@ -38,22 +38,20 @@
 }
 .collapse__content {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   background-color: #f7f7f7;
   color: #ff6060;
   padding: 40px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   position: relative;
   top: -0.3rem;
   z-index: -1;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  min-height: 249px;
+  height: 100%;
   animation: slide-bottom 0.5s ease-in-out;
 }
-
 
 @keyframes slide-bottom {
   0% {
@@ -68,30 +66,14 @@
   }
 }
 
-@media screen and (max-width: 960px) {
-  .collapse {
-    margin: 0;
-  }
-
-  .collapse__header h1 {
-    font-size: 20px;
-  }
-  .collapse__content {
-    font-size: 19px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .collapse {
-  width: 100%;
+.collapse__about {
+    margin: 0 ;
 }
 }
 
 @media screen and (max-width: 360px) {
-  .collapse {
-    margin: 0;
-  }
-  .collapse__header h1 {
+  .collapse__header h3 {
     font-size: 13px;
   }
   .collapse__content {
