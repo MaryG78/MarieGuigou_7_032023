@@ -4,7 +4,7 @@ import Carroussel from "../components/Carroussel";
 import AccomodationTitle from "../components/AccomodationTitle";
 import Collapse from "../components/Collapse";
 import { useLocation } from "react-router-dom";
-import styles from "../styles/collapse.module.css";
+import styles from "../styles/collapseAccomodation.module.css";
 
 const Accomodation = () => {
   const location = useLocation();
@@ -33,18 +33,26 @@ const Accomodation = () => {
     <>
       <Carroussel imageUrl={selectedAccomodation.cover} />
       <AccomodationTitle accomodation={selectedAccomodation} />
-      <div className={styles.collapse__container}>
-        <Collapse
-          title="Description"
-          content={selectedAccomodation.description}
-        />
-        <Collapse
-          title="Equipements"
-          content={selectedAccomodation.equipments.map((equipment) => (
-            <span>{equipment}</span>
-          ))}
-        />
-      </div>
+      <section className={styles.collapse__accomodation}>
+        <div className={styles.collapse__accomodation__card}>
+          <Collapse
+            title="Description"
+            content={selectedAccomodation.description}
+          />
+        </div>
+        <div className={styles.collapse__accomodation__card}>
+          <Collapse
+            title="Equipements"
+            content={
+              <ul>
+                {selectedAccomodation.equipments.map((equipment) => (
+                  <li>{equipment}</li>
+                ))}
+              </ul>
+            }
+          />
+        </div>
+      </section>
     </>
   );
 };
