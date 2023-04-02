@@ -18,7 +18,7 @@ const Collapse = (props) => {
   return (
     <>
       <div className={styles.collapse__header}>
-        <h3>{props.title}</h3>
+        <div className={styles.collapse__header__title}>{props.title}</div>
         <img
           onClick={textOpened}
           className={`arrow ${open ? styles.arrow_up : styles.arrow_down}`}
