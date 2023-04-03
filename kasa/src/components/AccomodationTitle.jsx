@@ -19,23 +19,23 @@ const AccomodationTitle = ({accomodation}) => {
         <h1>{accomodation.title}</h1>
         <h2>{accomodation.location}</h2>
         <ul>
-          {accomodation.tags.map((tag) => (
-            <li>{tag}</li>
+          {accomodation.tags.map((tag, i) => (
+            <li key={i}>{tag}</li>
           ))}
         </ul>
       </div>
       <div className={styles.title__owner}>
+        <ul className={styles.title__owner__stars}>
+          {stars.map((star, i) => (
+            <li key={i}>{star}</li>
+          ))}
+        </ul>
         <div className={styles.title__owner__details}>
           <h3>{accomodation.host.name}</h3>
           <div className={styles.title__owner__badge}>
             <img src={accomodation.host.picture} />
           </div>
         </div>
-        <ul className={styles.title__owner__stars}>
-          {stars.map((star) => (
-            <li>{star}</li>
-          ))}
-        </ul>
       </div>
     </section>
   );

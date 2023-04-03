@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Carroussel from "../components/Carroussel";
 import AccomodationTitle from "../components/AccomodationTitle";
 import Collapse from "../components/Collapse";
 import { useLocation } from "react-router-dom";
 import styles from "../styles/collapseAccomodation.module.css";
+import SlideShow from "../components/SlideShow";
 
 const Accomodation = () => {
   const location = useLocation();
@@ -31,7 +31,7 @@ const Accomodation = () => {
   if (selectedAccomodation == null) return <div>...Loading</div>;
   return (
     <>
-      <Carroussel imageUrl={selectedAccomodation.cover} />
+      <SlideShow pictures={selectedAccomodation.pictures} />
       <AccomodationTitle accomodation={selectedAccomodation} />
       <section className={styles.collapse__accomodation}>
         <div className={styles.collapse__accomodation__card}>
@@ -45,8 +45,8 @@ const Accomodation = () => {
             title="Equipements"
             content={
               <ul>
-                {selectedAccomodation.equipments.map((equipment) => (
-                  <li>{equipment}</li>
+                {selectedAccomodation.equipments.map((equipment, i) => (
+                  <li key={i}>{equipment}</li>
                 ))}
               </ul>
             }
