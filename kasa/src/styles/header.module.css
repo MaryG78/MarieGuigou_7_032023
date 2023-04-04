@@ -9,6 +9,7 @@
 
 .header ul {
   display: flex;
+  padding: 0;
 }
 
 header a {
@@ -24,11 +25,6 @@ header a {
   text-decoration: underline;
 }
 
-.header ul {
-  padding: 0;
-}
-
-
 @media screen and (max-width: 650px) {
   .header ul li a {
     font-size: 12px;
@@ -42,5 +38,15 @@ header a {
   .header img {
     width: 145px;
     height: 47px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header ul {
+    margin-top: 5px;
   }
 }

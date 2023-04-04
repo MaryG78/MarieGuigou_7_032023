@@ -3,8 +3,9 @@
   border-radius: 10px;
   flex-basis: 30%;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
-  background-size: cover;  
+  background-size: cover;
 }
 
 .card img {
@@ -13,7 +14,6 @@
   object-fit: cover;
   border-radius: 1rem;
   filter: brightness(80%);
-
 }
 
 .card figcaption {
@@ -24,7 +24,7 @@
   font-weight: 500;
   font-size: 18px;
   margin: 20px;
-  width: 60%
+  width: 60%;
 }
 
 @media screen and (max-width: 960px) {
@@ -38,12 +38,12 @@
     flex-basis: 100%;
   }
   .card img {
-    height: 210px;
+    /* height: 210px; */
   }
-} 
+}
 
-/* @media screen and (max-width: 650px) {
-    .card {
-      min-width: 335px;
-    }
-} */
+@media screen and (max-width: 650px) {
+.card img {
+height: 255px;;
+}
+}

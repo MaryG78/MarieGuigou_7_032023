@@ -7,12 +7,12 @@ const Cards = (props) => {
     <figure className={styles.card}>
       <img src={props.imageUrl} />
       <Link
-        to="/accomodation"
+        to={`/accomodation/${props.id}`}
         state={{
-          accomodationId: props.accomodationId,
+          id: props.id,
         }}
       >
-      <figcaption>{props.title}</figcaption>
+        <figcaption>{props.title}</figcaption>
       </Link>
     </figure>
   );

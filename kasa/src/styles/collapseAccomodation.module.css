@@ -23,11 +23,9 @@
 
 .collapse__header img {
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
-.arrow {
-  transition: all 0.2s ease-in-out;
-}
 .arrow_up {
   transform: rotate(0deg);
 }
@@ -57,7 +55,6 @@
   animation: slide-bottom 0.5s ease-in-out;
 }
 
-
 @keyframes slide-bottom {
   0% {
     opacity: 0;
@@ -72,8 +69,8 @@
 }
 
 @media screen and (max-width: 768px) {
-.collapse__accomodation {
-
+  .collapse__accomodation__card {
+    flex-basis: 100%;
   }
 }
 
@@ -81,16 +78,15 @@
   .collapse__header__title {
     font-size: 13px;
   }
+  .collapse__header {
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
   .collapse__content {
     font-size: 12px;
     padding: 24px 11px;
     min-height: 180px;
+    border-radius: 5px;
   }
-}
-
-
-@media screen and (max-width: 768px) {
-.collapse__accomodation__card {
-  flex-basis: 100%;
-}
 }
