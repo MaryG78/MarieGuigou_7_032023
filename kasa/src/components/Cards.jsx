@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const Cards = (props) => {
   return (
     <figure className={styles.card}>
-      <img src={props.imageUrl} />
       <Link
         to={`/accomodation/${props.id}`}
         state={{
           id: props.id,
         }}
       >
+        <img src={props.imageUrl} />
         <figcaption>{props.title}</figcaption>
       </Link>
     </figure>

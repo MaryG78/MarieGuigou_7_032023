@@ -12,17 +12,19 @@
   padding: 0;
 }
 
-header a {
+.header a {
   margin-left: 57px;
 }
+
+.header a:active,
+a:visited {
+  text-decoration: underline;
+}
+
 .header ul li a {
   color: #ff6060;
   font-weight: 500;
   font-size: 24px;
-}
-
-.header ul li a.active {
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 650px) {

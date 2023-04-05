@@ -7,10 +7,8 @@ import styles from "../styles/collapseAccomodation.module.css";
 import SlideShow from "../components/SlideShow";
 
 const Accomodation = () => {
-  // const location = useLocation();
-  // console.log(location.state)
-  let location = useParams()
-  const navigate = useNavigate()
+  let location = useParams();
+  const navigate = useNavigate();
 
   const [selectedAccomodation, setSelectedAccomodation] = useState();
 
@@ -21,18 +19,15 @@ const Accomodation = () => {
       const accomodationData = await accomodationsDatas.find(
         (accomodation) => accomodation.id === location.id
       );
-      if(!accomodationData) {
-        navigate("/Error")
+      if (!accomodationData) {
+        navigate("/Error");
       } else {
         setSelectedAccomodation(accomodationData);
-        console.log(accomodationData.id);
       }
-        
     } catch (err) {
       console.log(err);
     }
   };
-
 
   useEffect(() => {
     fetchAccomadationData();
@@ -55,11 +50,11 @@ const Accomodation = () => {
           <Collapse
             title="Equipements"
             content={
-              <ul>
+              <span>
                 {selectedAccomodation.equipments.map((equipment, i) => (
                   <li key={i}>{equipment}</li>
                 ))}
-              </ul>
+              </span>
             }
           />
         </div>

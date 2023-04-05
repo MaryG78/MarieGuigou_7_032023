@@ -19,8 +19,6 @@
   font-weight: 500;
 }
 
-
-
 @media screen and (max-width: 650px) {
   .banner {
     margin-top: 17px;
@@ -30,7 +28,6 @@
 
   .banner p {
     text-align: start;
-
   }
 }
 
@@ -41,7 +38,6 @@
   }
   .banner {
     height: 111px;
-
   }
 }
 
