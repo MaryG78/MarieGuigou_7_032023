@@ -26,13 +26,13 @@ const SlideShow = ({ pictures }) => {
           <img
             className={`${styles.carousel__arrow} ${styles.carousel__arrow_next}`}
             src={nextButton}
-            alt="montre l'image suivante"
+            alt="suivante"
             onClick={moveToPrevious}
           />
           <img
             className={`${styles.carousel__arrow} ${styles.carousel__arrow_return}`}
             src={returnButton}
-            alt="show previous slider"
+            alt="précédente"
             onClick={moveToNext}
           />
           <p className={styles.slideCount}>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import AccomodationTitle from "../components/AccomodationTitle";
 import Collapse from "../components/Collapse";
@@ -12,7 +12,7 @@ const Accomodation = () => {
 
   const [selectedAccomodation, setSelectedAccomodation] = useState();
 
-  const fetchAccomadationData = async () => {
+  const fetchAccomadationData = useCallback(async () => {
     try {
       const response = await axios.get("/logements.json");
       const accomodationsDatas = await response.data;
@@ -27,11 +27,11 @@ const Accomodation = () => {
     } catch (err) {
       console.log(err);
     }
-  };
+  }, [location.id, navigate, setSelectedAccomodation]);
 
   useEffect(() => {
     fetchAccomadationData();
-  }, []);
+  }, [fetchAccomadationData]);
 
   if (selectedAccomodation == null) return <div>...Loading</div>;
 

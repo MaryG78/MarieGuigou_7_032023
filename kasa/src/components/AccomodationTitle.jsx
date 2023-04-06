@@ -34,7 +34,7 @@ const AccomodationTitle = ({ accomodation }) => {
         <div className={styles.title__owner__details}>
           <h3>{accomodation.host.name}</h3>
           <div className={styles.title__owner__badge}>
-            <img src={accomodation.host.picture} />
+            <img src={accomodation.host.picture} alt="Votre hôte" />
           </div>
         </div>
       </div>
