@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   color: #ff6060;
@@ -17,7 +18,8 @@
 }
 
 .header a:active,
-a:visited {
+a:visited,
+a:hover {
   text-decoration: underline;
 }
 

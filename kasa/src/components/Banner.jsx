@@ -1,22 +1,11 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
 import styles from "../styles/banner.module.css";
 
-const Banner = () => {
-  const [aboutPage, setAboutPage] = useState(false);
-
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/about") {
-      setAboutPage(true);
-    }
-  }, []);
-
+const Banner = (props) => {
   return (
-    <section className={aboutPage ? styles.banner_about : styles.banner}>
-      {!aboutPage && <p>Chez vous, partout et ailleurs</p>}
+    <section className={styles.banner}>
+      <img src={props.bannerImage} alt="Une rivière entourée de montagnes" />
+      <p>{props.bannerText ? props.bannerText : null}</p>
     </section>
   );
 };

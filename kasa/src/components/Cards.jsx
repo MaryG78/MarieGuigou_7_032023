@@ -11,7 +11,7 @@ const Cards = (props) => {
           id: props.id,
         }}
       >
-        <img src={props.imageUrl} />
+        <img src={props.imageUrl} alt="Description de" />
         <figcaption>{props.title}</figcaption>
       </Link>
     </figure>

@@ -1,11 +1,17 @@
 .card {
-  position: relative;
   border-radius: 10px;
   flex-basis: 30%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   background-size: cover;
+  justify-content: center;
+}
+
+.card a {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .card img {
@@ -36,9 +42,6 @@
 @media screen and (max-width: 768px) {
   .card {
     flex-basis: 100%;
-  }
-  .card img {
-    /* height: 210px; */
   }
 }
 

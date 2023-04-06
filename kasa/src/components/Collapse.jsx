@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import collapseAboutStyles from "../styles/collapseAbout.module.css";
-import collapseAccomodationStyles from "../styles/collapseAccomodation.module.css";
+import styles from "../styles/collapse.module.css";
+
 import arrow from "../assets/arrow.png";
 
 const Collapse = (props) => {
@@ -9,12 +8,6 @@ const Collapse = (props) => {
   const textOpened = () => {
     setOpen(!open);
   };
-
-  const location = useLocation();
-  const styles =
-    location.pathname === "/about"
-      ? collapseAboutStyles
-      : collapseAccomodationStyles;
 
   return (
     <>
