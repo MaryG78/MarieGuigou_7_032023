@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   color: #ff6060;
@@ -9,25 +10,24 @@
 
 .header ul {
   display: flex;
+  padding: 0;
 }
 
-header a {
+.header a {
   margin-left: 57px;
 }
+
+.header a:active,
+a:visited,
+a:hover {
+  text-decoration: underline;
+}
+
 .header ul li a {
   color: #ff6060;
   font-weight: 500;
   font-size: 24px;
 }
-
-.header ul li a.active {
-  text-decoration: underline;
-}
-
-.header ul {
-  padding: 0;
-}
-
 
 @media screen and (max-width: 650px) {
   .header ul li a {
@@ -42,5 +42,15 @@ header a {
   .header img {
     width: 145px;
     height: 47px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header ul {
+    margin-top: 5px;
   }
 }

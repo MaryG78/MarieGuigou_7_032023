@@ -45,15 +45,13 @@
 @media screen and (max-width: 450px) {
   .slideShow {
     height: 315px;
+    border-radius: 10px;
   }
 
   .carousel__arrow {
     width: 11.67px;
     height: 19.8px;
   }
-}
-
-@media screen and (max-width: 650px) {
 }
 
 @media screen and (max-width: 375px) {

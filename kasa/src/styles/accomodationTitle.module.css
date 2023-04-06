@@ -93,9 +93,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-}
-
 @media screen and (max-width: 650px) {
   .title h1 {
     font-size: 28px;
@@ -114,7 +111,8 @@
   .title h1 {
     font-size: 18px;
   }
-  .title h2, .title h3 {
+  .title h2,
+  .title h3 {
     font-size: 14px;
   }
   .title__owner__stars img {
@@ -127,11 +125,21 @@
     padding: 9px 25px;
   }
 
-    .title__owner__badge img {
+  .title__owner__badge img {
     height: 50px;
     width: 50px;
   }
 
+  .title__owner {
+    margin-top: 17px;
+  }
+
+  .title__owner__details {
+    padding: 0;
+  }
+  .title__owner__stars {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 375px) {

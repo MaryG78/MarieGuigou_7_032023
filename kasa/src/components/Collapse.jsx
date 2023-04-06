@@ -1,19 +1,13 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-import collapseAboutStyles from "../styles/collapseAbout.module.css";
-import collapseAccomodationStyles from "../styles/collapseAccomodation.module.css";
+import styles from "../styles/collapse.module.css";
+
+import arrow from "../assets/arrow.png";
 
 const Collapse = (props) => {
   const [open, setOpen] = useState(false);
   const textOpened = () => {
     setOpen(!open);
   };
-
-  const location=useLocation();
-  const styles =
-    location.pathname === "/about"
-      ? collapseAboutStyles
-      : collapseAccomodationStyles;
 
   return (
     <>
@@ -22,7 +16,7 @@ const Collapse = (props) => {
         <img
           onClick={textOpened}
           className={`arrow ${open ? styles.arrow_up : styles.arrow_down}`}
-          src="arrow.png"
+          src={arrow}
           alt="devoilement du contenu"
         />
       </div>

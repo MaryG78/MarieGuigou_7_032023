@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/slideShow.module.css";
-import nextButton from "../assets/button-next.png"
-import returnButton from "../assets/button-return.png"
+import nextButton from "../assets/button-next.png";
+import returnButton from "../assets/button-return.png";
 
 const SlideShow = ({ pictures }) => {
   const [currentPicture, setCurrentPicture] = useState(0);
@@ -42,6 +42,6 @@ const SlideShow = ({ pictures }) => {
       )}
     </section>
   );
-}
+};
 
 export default SlideShow;

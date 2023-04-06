@@ -20,12 +20,11 @@
 .footer__text {
   padding-bottom: 29px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: clamp(12px, 2vw, 24px);
 }
 
 @media screen and (max-width: 650px) {
-.footer__text {
-    font-size: 12px;
+  .footer__text {
     padding-bottom: 62px;
   }
 }

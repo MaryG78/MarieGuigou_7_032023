@@ -24,7 +24,7 @@ const Gallery = () => {
           key={accomodation.id}
           title={accomodation.title}
           imageUrl={accomodation.cover}
-          accomodationId={accomodation.id}
+          id={accomodation.id}
         />
       ))}
     </div>

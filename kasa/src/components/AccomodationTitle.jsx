@@ -1,18 +1,19 @@
 import React from "react";
 import styles from "../styles/accomodationTitle.module.css";
+import redStar from "../assets/red-star.png";
+import greyStar from "../assets/grey-star.png";
 
-const AccomodationTitle = ({accomodation}) => {
-
+const AccomodationTitle = ({ accomodation }) => {
   const rating = accomodation.rating;
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
-      stars.push(<img src="red-star.png" alt="Etoile rouge" />);
+      stars.push(<img src={redStar} alt="Etoile rouge" />);
     } else {
-      stars.push(<img src="grey-star.png" alt="Etoile grise" />);
+      stars.push(<img src={greyStar} alt="Etoile grise" />);
     }
   }
-  
+
   return (
     <section className={styles.title}>
       <div className={styles.title__header}>
