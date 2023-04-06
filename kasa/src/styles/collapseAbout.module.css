@@ -5,6 +5,16 @@
   flex-wrap: wrap;
 }
 
+.about__header {
+  border-radius: 5px;
+}
+
+.about__content {
+  border-radius: 5px;
+  min-height: unset;
+  padding: 20px 0px 10px 10px;
+}
+
 @media screen and (max-width: 768px) {
   .collapse__about {
     margin: 0;

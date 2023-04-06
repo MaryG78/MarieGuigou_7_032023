@@ -16,7 +16,7 @@
 
 .banner p {
   color: #ffffff;
-  font-size: clamp(20px, 4vw, 48px);
+  font-size: clamp(22px, 4vw, 48px);
   left: 50%;
   position: absolute;
   top: 50%;
@@ -31,6 +31,10 @@
     height: 170px;
   }
 
+  .banner img {
+    border-radius: 10px;
+  }
+
   .banner p {
     left: 35%;
     white-space: normal;
@@ -39,31 +43,15 @@
 
 @media screen and (max-width: 375px) {
   .banner p {
-    margin-left: 16px;
-    margin-right: 10px;
+    left: 36%;
   }
   .banner {
     height: 111px;
+    margin-bottom: 0;
   }
 }
-/* 
-.banner_about {
-  margin-top: 44px;
-  background-position: center;
-  background-size: cover;
-  min-height: 111px;
-  width: 100%;
-  height: 223px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 25px;
-} */
 
-/* @media screen and (max-width: 650px) {
-  .banner_about {
-    margin-top: 17px;
-    border-radius: 10px;
-  }
-} */
+.aboutBanner {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}

@@ -11,7 +11,7 @@ const Collapse = (props) => {
 
   return (
     <>
-      <div className={styles.collapse__header}>
+      <div className={`${styles.collapse__header} ${props.className}`}>
         <div className={styles.collapse__header__title}>{props.title}</div>
         <img
           onClick={textOpened}
@@ -21,7 +21,9 @@ const Collapse = (props) => {
         />
       </div>
       {open && (
-        <div className={styles.collapse__content}>
+        <div
+          className={`${styles.collapse__content} ${props.contentclassName}`}
+        >
           <p className={styles.collapse__text}>{props.content}</p>
         </div>
       )}

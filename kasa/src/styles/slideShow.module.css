@@ -40,11 +40,20 @@
     height: 45px;
     width: 26px;
   }
+
+  .slideShow {
+    height: 255px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .slideShow {
+    height: 255px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .slideShow {
-    height: 315px;
     border-radius: 10px;
   }
 
